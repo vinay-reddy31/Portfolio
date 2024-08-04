@@ -1,0 +1,10 @@
+.footer-container{
+    background: rgb(23, 23, 33);
+    color: rgb(242, 243, 244);
+}
+.footer-social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}

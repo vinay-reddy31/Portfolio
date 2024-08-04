@@ -1,0 +1,24 @@
+.home-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: #ffffffae;
+}
+.heading-name{
+    color: #ffffff;
+    font-size: 34px;
+}
+.name{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+}
+.role{
+    color:#ffffff;
+    text-decoration: underline;
+    text-decoration-color:green ;
+    text-underline-offset:8px ;
+}
