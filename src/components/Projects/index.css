@@ -1,94 +1,212 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: rgb(25, 25, 36);
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', ' Roboto',
-      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  }
-  
-  html {
-    overflow-x: hidden;
-  }
-  
-  .app-container {
-    background-color: rgb(25, 25, 36);
-    max-width: 1110px;
-    margin: auto;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 25, 36);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", " Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.app-container {
+  background-color: rgb(25, 25, 36);
+  max-width: 1110px;
+  margin: auto;
+}
+
+.title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 56px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
   .title {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 56px;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 12px;
-    margin-bottom: 0;
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 24px;
   }
-  
-  @media screen and (min-width: 992px) {
-    .title {
-      font-size: 48px;
-      margin-top: 48px;
-      margin-bottom: 24px;
-    }
-  }
-  
+}
+
+.description {
+  max-width: 300px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
   .description {
-    max-width: 300px;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin: auto;
-    margin-bottom: 40px;
+    max-width: 730px;
+    font-size: 18px;
+    line-height: 28px;
   }
-  
-  @media screen and (min-width: 992px) {
-    .description {
-      max-width: 730px;
-      font-size: 18px;
-      line-height: 28px;
-    }
-  }
-  
+}
+
+.tabs-container {
+  max-width: 300px;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
   .tabs-container {
-    max-width: 300px;
-    margin: auto;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
+    max-width: 455px;
   }
-  
-  @media screen and (min-width: 992px) {
-    .tabs-container {
-      max-width: 455px;
-    }
-  }
-  
+}
+
+.project-list-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
   .project-list-container {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 12px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
-  
-  @media screen and (min-width: 992px) {
-    .project-list-container {
-      margin-bottom: 150px;
-    }
+}
+
+.github-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.github-container p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.github-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.github-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: #b0ff4a 1px solid;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto";
+  box-shadow: 0 0 10px #333333;
+  outline: none;
+}
+
+.github-button:hover {
+  background-color: #2e7de6;
+  border: #ecf0e7 1px solid;
+  color: #ffffff;
+}
+
+/* .github-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.stars-container {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: star-animation 1s infinite;
+}
+
+.star:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.star:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.star:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.star:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes star-animation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
   }
-  
+  50% {
+    transform: translateY(-20px) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+} */
