@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { IoMdMenu,IoMdClose} from "react-icons/io";
-import './index.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+import "./index.css";
 
 class Header extends Component {
-state = {isMenuOpen: false}
+  state = { isMenuOpen: false };
 
   toggleMenu = () => {
     this.setState((prevState) => ({
@@ -18,15 +18,36 @@ state = {isMenuOpen: false}
     return (
       <nav className="nav-header">
         <div className="desktop-nav-content">
-          <img className="header-icon" src="https://img.icons8.com/?size=100&id=nqg2tDAxO1LG&format=png&color=000000" alt="header" />
+          <p class="portfolio-title">
+            Portfolio<span class="dot">.</span>
+          </p>
           <ul className="nav-menu">
-            <li className="nav-item"><Link className='nav-link' to="/home">Home</Link></li>
-            <li className="nav-item"><Link className='nav-link' to="/about">About</Link></li>
-            <li className="nav-item"><Link className='nav-link' to="/skills">Skills</Link></li>
-            <li className="nav-item"><Link className='nav-link' to="/projects">Projects</Link></li>
-            <li className="nav-item"><Link className='nav-link' to="/contact">Connect</Link></li>
-
-            <li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/home">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/skills">
+                Skills
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/projects">
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">
+                Connect
+              </Link>
+            </li>
+            {/* <li>
               <img
                 className="social-network-img"
                 src="https://assets.ccbp.in/frontend/react-js/projects-linkedin-img.png"
@@ -46,40 +67,62 @@ state = {isMenuOpen: false}
                 src="https://static.vecteezy.com/system/resources/previews/020/009/614/large_2x/email-and-mail-icon-black-free-png.png"
                 alt="Mail"
               />
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="mobile-nav-content">
-          <img className="header-icon" src="https://img.icons8.com/?size=100&id=nqg2tDAxO1LG&format=png&color=000000" alt="header" />
-          <button className="menu-btn" onClick={this.toggleMenu}>{isMenuOpen?<IoMdClose />:<IoMdMenu />}</button>
+          <img
+            className="header-icon"
+            src="https://img.icons8.com/?size=100&id=nqg2tDAxO1LG&format=png&color=000000"
+            alt="header"
+          />
+          <button className="menu-btn" onClick={this.toggleMenu}>
+            {isMenuOpen ? <IoMdClose /> : <IoMdMenu />}
+          </button>
           {isMenuOpen && (
             <ul className="nav-menu mobile">
-              <li className="nav-item"><Link className='nav-link' to="/home">Home</Link></li>
-              <li className="nav-item"><Link className='nav-link' to="/about">About</Link></li>
-              <li className="nav-item"><Link className='nav-link' to="/skills">Skills</Link></li>
-              <li className="nav-item"><Link className='nav-link' to="/projects">Projects</Link></li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/home">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/skills">
+                  Skills
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/projects">
+                  Projects
+                </Link>
+              </li>
               <li className="mobile-social-media-icons">
-              <li>
-                <img
-                  className="social-network-img"
-                  src="https://assets.ccbp.in/frontend/react-js/projects-linkedin-img.png"
-                  alt="Linked In"
-                />
-              </li>
-              <li>
-                <img
-                  className="social-network-img"
-                  src="https://images.squarespace-cdn.com/content/v1/526b4c3fe4b0b830869fa012/1657229698769-88WMLVMRLF007PDLA57D/image-asset.png"
-                  alt="Git Hub"
-                />
-              </li>
-              <li>
-                <img
-                  className="social-network-img"
-                  src="https://static.vecteezy.com/system/resources/previews/020/009/614/large_2x/email-and-mail-icon-black-free-png.png"
-                  alt="Mail"
-                />
-              </li>
+                <li>
+                  <img
+                    className="social-network-img"
+                    src="https://assets.ccbp.in/frontend/react-js/projects-linkedin-img.png"
+                    alt="Linked In"
+                  />
+                </li>
+                <li>
+                  <img
+                    className="social-network-img"
+                    src="https://images.squarespace-cdn.com/content/v1/526b4c3fe4b0b830869fa012/1657229698769-88WMLVMRLF007PDLA57D/image-asset.png"
+                    alt="Git Hub"
+                  />
+                </li>
+                <li>
+                  <img
+                    className="social-network-img"
+                    src="https://static.vecteezy.com/system/resources/previews/020/009/614/large_2x/email-and-mail-icon-black-free-png.png"
+                    alt="Mail"
+                  />
+                </li>
               </li>
             </ul>
           )}
