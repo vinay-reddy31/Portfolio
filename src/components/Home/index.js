@@ -93,7 +93,7 @@ class Home extends Component {
               </h4>
               <div className="social-media">
                 <a
-                  href="https://www.linkedin.com/in/shivakrishnabeeraboina/"
+                  href="https://www.linkedin.com/in/vinay-arukala/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -109,7 +109,7 @@ class Home extends Component {
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/ShivaKrisl"
+                  href="https://github.com/vinay-reddy31"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -125,7 +125,6 @@ class Home extends Component {
                   </svg>
                 </a>
                 <a
-                  href="https://leetcode.com/shivakrishnabeeraboina/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
