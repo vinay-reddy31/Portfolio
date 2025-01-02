@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./index.css";
-import { BiFontColor } from "react-icons/bi";
 
 class Home extends Component {
   state = {
