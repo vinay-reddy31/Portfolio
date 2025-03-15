@@ -17,21 +17,21 @@ const Footer = () => (
     </div>
 
     <div className="social-links">
-      <button href="#" className="social-icon">
+      <button className="social-icon">
         <img
           src="https://img.icons8.com/?size=100&id=13930&format=png"
           alt="LinkedIn"
         />
         <span>LinkedIn</span>
       </button>
-      <button href="#" className="social-icon">
+      <button className="social-icon">
         <img
           src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
           alt="Facebook"
         />
         <span>Facebook</span>
       </button>
-      <button href="#" className="social-icon">
+      <button className="social-icon">
         <img
           src="https://i.pinimg.com/originals/ed/54/51/ed5451961869a97b434b185f2fe064cc.webp"
           alt="Twitter"
