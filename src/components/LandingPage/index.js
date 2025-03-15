@@ -4,6 +4,7 @@ import Experience from "../Experience";
 import Skills from "../Skills";
 import Projects from "../Projects";
 import Footer from "../Footer";
+import PortfolioSection from "../Accomplishments";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <Experience />
       <Skills />
       <Projects />
+      <PortfolioSection />
       <Footer />
     </div>
   );
