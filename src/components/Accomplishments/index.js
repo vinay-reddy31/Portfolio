@@ -1,17 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaAward } from "react-icons/fa";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import "./index.css"; // Import the CSS file
 
-const Button = ({ children, onClick }) => {
-  return (
-    <button className="custom-button" onClick={onClick}>
-      {children}
-    </button>
-  );
-};
+// const Button = ({ children, onClick }) => {
+//   return (
+//     <button className="custom-button" onClick={onClick}>
+//       {children}
+//     </button>
+//   );
+// };
 
 const accomplishments = [
   {
